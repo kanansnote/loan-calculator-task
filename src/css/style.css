@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 1vh 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(20vh);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    #divLoanCalculator {
+        display: flex;
+        flex-direction: column;
+        
+            #divLeft {
+                display: flex;
+                flex-direction: column;
+        
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        
+            #divRight {
+                display: flex;
+                flex-direction: column;
+            }
+    }
+}
