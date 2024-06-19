@@ -10,21 +10,18 @@
     <header></header>
     <main>
         <h1>Loan Calculator</h1>
-        <div id="divLoanCalculator">
-            <div id="divLeft">
-                <label for="">Loan Amount</label>
-                <input type="text" placeholder="Amount">
-            </div>
-            <div id="divRight">
-                <label for=""></label>
-                <select name="" id="">
-                    <option value="12">0-6 ay aralığında</option>
-                    <option value="15">7-12 ay aralığında</option>
-                    <option value="20">13-24 ay aralığında</option>
-                </select>
-            </div>
-        </div>
-        <button>Calculate</button>
+        <form id="LoanForm">
+            <label for="amount">Loan Amount:</label>
+            <input type="number" id="amount" required>
+            <label for="interestByTerm">Interest Rate by Term:</label>
+            <select title="" name="" id="interestByTerm">
+                <option value="12">12% by 0-6 months</option>
+                <option value="15">15% by 7-12 months</option>
+                <option value="20">20% by 13-24 months</option>
+            </select>
+            <div id="result"></div>
+            <button type="button">Calculate</button>
+        </form>
     </main>
     <footer>
         <p>© 2024 kanansnote. All rights reserved.</p>

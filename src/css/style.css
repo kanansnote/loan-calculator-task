@@ -13,29 +13,27 @@ body {
     transform: translateY(20vh);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+#LoanForm {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label, input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-    #divLoanCalculator {
-        display: flex;
-        flex-direction: column;
-        
-            #divLeft {
-                display: flex;
-                flex-direction: column;
-        
-                label {
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-            }
-        
-            #divRight {
-                display: flex;
-                flex-direction: column;
-            }
-    }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
