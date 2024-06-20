@@ -1,3 +1,6 @@
+const interestSelect = document.getElementById('interest');
+const termSelect = document.getElementById('term');
+
 const calculate = document.getElementById('calculate');
 const result = document.getElementById('result');
 
@@ -8,7 +11,7 @@ calculate.addEventListener('click', function() {
     let term = parseInt(document.getElementById('term').value);
 
     if (isNaN(amount) || isNaN(interest) || isNaN(term)) {
-        result.textContent = "Please, fill out the all info";
+        result.textContent = "Please, enter loan amount";
         result.style.color = 'red';
         return;
     }
@@ -23,9 +26,6 @@ calculate.addEventListener('click', function() {
     // Showing the result
     result.textContent = `Monthy Payment: ${monthlyPayment.toFixed(2)} AZN`;
 });
-
-const interestSelect = document.getElementById('interest');
-const termSelect = document.getElementById('term');
 
 function updateTerm() {
   const selectedInterestValue = interestSelect.value;
@@ -57,5 +57,3 @@ updateTerm();
 
 // Updating term whenever the interest selection changes
 interestSelect.addEventListener('change', updateTerm);
-
-
